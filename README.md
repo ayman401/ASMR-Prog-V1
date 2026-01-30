@@ -12,10 +12,10 @@ A modern, responsive login and registration portal built with HTML, CSS, and Jav
 ## Screenshots
 
 ### Login Page
-![Login Page](login-page.png)
+![Login Page](./img/Login-page.png)
 
 ### Register Page
-![Register Page](register-page.png)
+![Register Page](./img/Registare-page.png)
 
 ## How to Run
 
