@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Access Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <i class="fas fa-shield-alt"></i>
+            <span>SecureAccess</span>
+        </div>
+        
+        <div class="welcome-section">
+            <div class="welcome-content">
+                <h1>Welcome to SecureAccess</h1>
+                <p>Join our community to access exclusive features and personalized content. Your security is our top priority.</p>
+                
+                <ul class="features">
+                    <li class="animate-slide" style="animation-delay: 0.1s"><i class="fas fa-lock"></i> Bank-level security encryption</li>
+                    <li class="animate-slide" style="animation-delay: 0.2s"><i class="fas fa-bolt"></i> Fast and seamless experience</li>
+                    <li class="animate-slide" style="animation-delay: 0.3s"><i class="fas fa-user-shield"></i> Privacy protection guaranteed</li>
+                    <li class="animate-slide" style="animation-delay: 0.4s"><i class="fas fa-sync-alt"></i> Sync across all your devices</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <div class="form-container">
+                <div class="message" id="message"></div>
+                
+                <!-- Login Form -->
+                <div class="form login-form form-animation" id="loginForm">
+                    <h2 class="form-title">Sign In</h2>
+                    
+                    <form id="loginFormElement">
+                        <div class="input-group">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="loginUsername" placeholder="Username or Email" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <i class="fas fa-key"></i>
+                            <input type="password" id="loginPassword" placeholder="Password" required>
+                        </div>
+                        
+                        <div class="remember-forgot">
+                            <label>
+                                <input type="checkbox" id="rememberMe">
+                                Remember me
+                            </label>
+                            <a href="#" id="forgotPassword">Forgot Password?</a>
+                        </div>
+                        
+                        <button type="submit" class="btn">
+                            <i class="fas fa-sign-in-alt"></i> Sign In
+                        </button>
+                    </form>
+                    
+                    <div class="toggle-text">
+                        Don't have an account? <a id="showRegister">Sign Up</a>
+                    </div>
+                </div>
+                
+                <!-- Register Form -->
+                <div class="form register-form" id="registerForm">
+                    <h2 class="form-title">Create Account</h2>
+                    
+                    <form id="registerFormElement">
+                        <div class="input-group">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="registerName" placeholder="Full Name" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="registerEmail" placeholder="Email Address" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <i class="fas fa-key"></i>
+                            <input type="password" id="registerPassword" placeholder="Password" required>
+                            <div class="password-strength">
+                                Password strength: 
+                                <div class="strength-bar">
+                                    <div class="strength-fill" id="passwordStrength"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <i class="fas fa-key"></i>
+                            <input type="password" id="registerConfirmPassword" placeholder="Confirm Password" required>
+                        </div>
+                        
+                        <div class="terms-agreement">
+                            By creating an account, you agree to our 
+                            <a href="#">Terms of Service</a> and 
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                        
+                        <button type="submit" class="btn">
+                            <i class="fas fa-user-plus"></i> Create Account
+                        </button>
+                    </form>
+                    
+                    <div class="toggle-text">
+                        Already have an account? <a id="showLogin">Sign In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
